@@ -1,0 +1,310 @@
+﻿<!doctype html>
+<html lang="en">
+<!--
+  ================================================================
+  NEETS DESIGNER BOUTIQUE: NOTES
+  ================================================================
+  1. Phone, email, address and viewing hours are filled in. To
+     change the number later, replace "918007245183" (links) and
+     "+91-8007245183" (visible text).
+  2. Key numbers in the About section: search for "PLACEHOLDER".
+  3. Client reviews: replace the sample reviews with real ones.
+  4. Photos: full-quality originals are in /images/photos and the
+     compressed copies the site uses are in /images/web.
+     When publishing, upload index.html, /css, /js, /images/web
+     and images/favicon.svg.
+  5. Motion: animations live in js/motion.js and the "Motion"
+     part of css/styles.css. Attributes that drive them:
+       data-split   = heading words rise up one by one
+       data-reveal  = text fades/slides up ("text") or photo pops
+                      up ("photo"); data-delay adds a delay (ms)
+       data-stagger = children reveal one after another
+       data-count   = number counts up
+     If JavaScript is off, everything simply shows without motion.
+  ================================================================
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Neets Designer Boutique | Bridal & Designer Wear in Nagpur</title>
+  <meta name="description" content="Neets Designer Boutique, Nagpur: modern and traditional Indian designer wear, bridal lehengas, sarees and Anarkalis. Book a private viewing.">
+  <meta name="theme-color" content="#1F1F1D">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // "js" enables the mobile menu; "motion" enables animations unless the visitor prefers reduced motion
+    document.documentElement.classList.add('js');
+    if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('motion');
+  </script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/motion.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ HEADER (sits on top of the hero photo) ============ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <nav class="nav nav-left" aria-label="Main" data-reveal="text" data-delay="1500">
+        <a href="#collections">Collections</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <a href="#top" class="logo-tab" aria-label="Neets Designer Boutique, back to top" data-reveal="drop" data-delay="200">
+        <img src="images/web/neets-logo.jpg" alt="Neet's Designer Boutique logo" width="220" height="156">
+      </a>
+
+      <nav class="nav nav-right" aria-label="More" data-reveal="text" data-delay="1500">
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/918007245183?text=Hello%20Neets%20Designer%20Boutique%2C%20I%27d%20like%20to%20book%20a%20private%20viewing." target="_blank" rel="noopener" class="nav-book">Book a viewing</a>
+      </nav>
+
+      <!-- Menu button: phones and tablets only -->
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-reveal="text" data-delay="1500">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE MENU ============ -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu-links" aria-label="Mobile">
+      <a href="#collections">Collections</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="mobile-menu-actions">
+      <a class="btn btn-glass btn-glass-sage" href="https://wa.me/918007245183?text=Hello%20Neets%20Designer%20Boutique%2C%20I%27d%20like%20to%20book%20a%20private%20viewing." target="_blank" rel="noopener">Book a private viewing</a>
+      <a class="btn btn-glass" href="tel:+918007245183">Call +91-8007245183</a>
+    </div>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ WELCOME / HERO ============ -->
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <div class="hero-panel" data-reveal="hero-photo" data-delay="0"><img src="images/web/pink-saree.jpg" alt="" width="509" height="509" fetchpriority="high"></div>
+        <div class="hero-panel" data-reveal="hero-photo" data-delay="140"><img src="images/web/embroidered-blouse.jpg" alt="" width="553" height="620"></div>
+        <div class="hero-panel" data-reveal="hero-photo" data-delay="280"><img src="images/web/silk-lehenga.jpg" alt="" width="560" height="557"></div>
+        <div class="hero-panel" data-reveal="hero-photo" data-delay="420"><img src="images/web/nauvari-saree.jpg" alt="" width="550" height="551"></div>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="script" data-reveal="text" data-delay="500">Where tradition meets modern elegance</p>
+        <h1 data-split data-delay="650">Timeless Indian wear,<br> designed around you.</h1>
+
+        <div class="hero-bottom">
+          <p class="hero-lead" data-reveal="text" data-delay="1250">Private, one-to-one styling in Nagpur for weddings, festivals and every occasion.</p>
+          <div class="hero-actions" data-reveal="text" data-delay="1450">
+            <a class="btn btn-glass btn-glass-sage" href="https://wa.me/918007245183?text=Hello%20Neets%20Designer%20Boutique%2C%20I%27d%20like%20to%20book%20a%20private%20viewing." target="_blank" rel="noopener">Book a private viewing</a>
+            <a class="btn btn-glass" href="#collections">Explore collections</a>
+          </div>
+          <a class="hero-circle" href="#collections" aria-label="Scroll to our collections" data-reveal="pop" data-delay="1700">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 8v9H8"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED CATEGORIES ============ -->
+    <section id="collections" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-split>Featured collections</h2>
+          <p data-reveal="text" data-delay="250">Modern cuts and traditional craft, finished by hand.</p>
+        </div>
+
+        <div class="cards" data-stagger="150">
+          <article class="card">
+            <div class="card-media" data-reveal="photo">
+              <img src="images/web/embroidered-blouse.jpg" alt="Red bridal blouse with hand embroidery and a gold woven border" width="553" height="620" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body" data-reveal="text">
+              <h3>Bridal &amp; Lehengas</h3>
+              <p>Heirloom bridal looks, embroidered and fitted to you.</p>
+              <a class="btn btn-outline btn-small" href="https://wa.me/918007245183?text=Hello%2C%20I%27d%20like%20to%20book%20a%20private%20viewing%20for%20bridal%20lehengas." target="_blank" rel="noopener">Book a viewing</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media" data-reveal="photo">
+              <img src="images/web/nauvari-saree.jpg" alt="Purple Nauvari saree with a green and gold woven border" width="550" height="551" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body" data-reveal="text">
+              <h3>Sarees</h3>
+              <p>Rich silks and soft drapes for every celebration.</p>
+              <a class="btn btn-outline btn-small" href="https://wa.me/918007245183?text=Hello%2C%20I%27d%20like%20to%20book%20a%20private%20viewing%20for%20sarees." target="_blank" rel="noopener">Book a viewing</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-media" data-reveal="photo">
+              <img src="images/web/silk-lehenga.jpg" alt="Yellow silk lehenga with a pink Paithani-style border and peacock motif blouse" width="560" height="557" loading="lazy" decoding="async">
+            </div>
+            <div class="card-body" data-reveal="text">
+              <h3>Suits &amp; Anarkalis</h3>
+              <p>Graceful silhouettes for festive and everyday wear.</p>
+              <a class="btn btn-outline btn-small" href="https://wa.me/918007245183?text=Hello%2C%20I%27d%20like%20to%20book%20a%20private%20viewing%20for%20suits%20and%20Anarkalis." target="_blank" rel="noopener">Book a viewing</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="section section-tint">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-split>Our services</h2>
+          <p data-reveal="text" data-delay="250">A calm, expert guide from first sketch to final fitting.</p>
+        </div>
+
+        <div class="services" data-stagger="120">
+          <div class="service" data-reveal="text">
+            <span class="icon-wrap"><svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M17 10a3 3 0 1 1 3 3v3.5L5 27h30L20 16.5"/></svg></span>
+            <h3>Private viewings</h3>
+            <p>A quiet, one-to-one hour with our designer, by appointment.</p>
+          </div>
+          <div class="service" data-reveal="text">
+            <span class="icon-wrap"><svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M30 5 L11 34"/><path d="M27.6 8.8 l1.6 -2.4"/><path d="M28 9 C38 13 35 22 25 24 S12 30 18 36"/></svg></span>
+            <h3>Custom design</h3>
+            <p>Your idea sketched, sourced and stitched to measure.</p>
+          </div>
+          <div class="service" data-reveal="text">
+            <span class="icon-wrap"><svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 9 C24 14 24 22 20 28 C16 22 16 14 20 9 Z"/><path d="M20 28 C14 26 9 21 8 15 C13 16 18 20 20 28 Z"/><path d="M20 28 C26 26 31 21 32 15 C27 16 22 20 20 28 Z"/><path d="M8 32 H32"/></svg></span>
+            <h3>Bridal styling</h3>
+            <p>Complete wedding looks, from mehendi to reception.</p>
+          </div>
+          <div class="service" data-reveal="text">
+            <span class="icon-wrap"><svg class="icon" viewBox="0 0 40 40" aria-hidden="true"><circle cx="15" cy="20" r="9"/><circle cx="15" cy="20" r="2.5"/><path d="M15 29 H36 V24 H23"/><path d="M27 29 V27 M31 29 V27"/></svg></span>
+            <h3>Fittings &amp; alterations</h3>
+            <p>Precise fittings, so every piece sits just right.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT + KEY NUMBERS ============ -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about-text">
+          <h2 data-split>Rooted in Nagpur, made for you.</h2>
+          <p data-reveal="text" data-delay="300">We blend India's rich traditions with clean, modern design.</p>
+          <p data-reveal="text" data-delay="420">Every outfit is shaped one-to-one, at an unhurried pace.</p>
+        </div>
+
+        <!-- PLACEHOLDER: replace these numbers with your real ones (keep data-count on the number) -->
+        <dl class="stats" data-stagger="120">
+          <div class="stat" data-reveal="text"><dt>Years designing</dt><dd><span data-count>12</span>+</dd></div>
+          <div class="stat" data-reveal="text"><dt>Outfits created</dt><dd><span data-count>2,500</span>+</dd></div>
+          <div class="stat" data-reveal="text"><dt>Brides dressed</dt><dd><span data-count>900</span>+</dd></div>
+          <div class="stat" data-reveal="text"><dt>Client rating</dt><dd><span data-count>4.9</span><span>/5</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ CLIENT REVIEWS ============ -->
+    <!-- PLACEHOLDER: these are sample reviews. Replace them with real client reviews before publishing. -->
+    <section id="reviews" class="section section-tint">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-split>Loved by our clients</h2>
+          <p data-reveal="text" data-delay="250">Calm guidance, careful craft, outfits worn with pride.</p>
+        </div>
+
+        <div class="reviews" data-stagger="150">
+          <figure class="review" data-reveal="text">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>“She understood my wedding vision and never once rushed me.”</blockquote>
+            <figcaption>Priya S.<span>Bride, Nagpur</span></figcaption>
+          </figure>
+          <figure class="review" data-reveal="text">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>“The private viewing felt calm and personal. A perfect fit, first time.”</blockquote>
+            <figcaption>Ananya D.<span>Festive wear</span></figcaption>
+          </figure>
+          <figure class="review" data-reveal="text">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <blockquote>“Modern cut, traditional soul. Every guest asked about my lehenga.”</blockquote>
+            <figcaption>Rutuja K.<span>Reception look</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT / BOOKING ============ -->
+    <section id="contact" class="contact">
+      <div class="container contact-inner">
+        <div class="contact-text">
+          <h2 data-split>Book your private viewing.</h2>
+          <p data-reveal="text" data-delay="350">Message or call us, and we'll set aside time just for you.</p>
+          <div class="contact-actions" data-reveal="text" data-delay="500">
+            <a class="btn btn-glass btn-glass-sage" href="https://wa.me/918007245183?text=Hello%20Neets%20Designer%20Boutique%2C%20I%27d%20like%20to%20book%20a%20private%20viewing." target="_blank" rel="noopener">
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>
+              WhatsApp us
+            </a>
+            <a class="btn btn-glass" href="tel:+918007245183">
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+              Call +91-8007245183
+            </a>
+          </div>
+        </div>
+
+        <dl class="contact-details" data-stagger="110">
+          <div data-reveal="text">
+            <dt>Call or WhatsApp</dt>
+            <dd><a href="tel:+918007245183">+91-8007245183</a></dd>
+          </div>
+          <div data-reveal="text">
+            <dt>Email</dt>
+            <dd><a href="mailto:anju14janbandhu@gmail.com">anju14janbandhu@gmail.com</a></dd>
+          </div>
+          <div data-reveal="text">
+            <dt>Studio</dt>
+            <dd>307, A Wing, Shivpriya Tower<br>Jaitala, Nagpur, Maharashtra 440036</dd>
+          </div>
+          <div data-reveal="text">
+            <dt>Private viewings</dt>
+            <dd>Monday to Saturday<br>11 am to 8 pm, by appointment</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#top" class="logo-footer" aria-label="Neets Designer Boutique, back to top">
+        <img src="images/web/neets-logo.jpg" alt="Neet's Designer Boutique logo" width="220" height="156" loading="lazy">
+      </a>
+      <p>&copy; 2026 Neets Designer Boutique, Nagpur</p>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING BOOKING BUTTON (desktop) ============ -->
+  <a class="float-cta" href="https://wa.me/918007245183?text=Hello%20Neets%20Designer%20Boutique%2C%20I%27d%20like%20to%20book%20a%20private%20viewing." target="_blank" rel="noopener">
+    <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>
+    Book a viewing
+  </a>
+
+  <!-- ============ MOBILE BOOKING BAR ============ -->
+  <div class="mobile-bar">
+    <a class="btn btn-dark" href="https://wa.me/918007245183?text=Hello%20Neets%20Designer%20Boutique%2C%20I%27d%20like%20to%20book%20a%20private%20viewing." target="_blank" rel="noopener">Book a viewing</a>
+    <a class="btn btn-outline" href="tel:+918007245183" aria-label="Call Neets Designer Boutique">
+      <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+      Call
+    </a>
+  </div>
+
+</body>
+</html>
